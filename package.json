@@ -14,5 +14,8 @@
     "dev:kds": "npm run dev --workspace kds",
     "build": "npm run build --workspace frontend && npm run build --workspace kds && npm run build --workspace backend",
     "lint": "npm run lint --workspace frontend && npm run lint --workspace kds"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
   }
 }
