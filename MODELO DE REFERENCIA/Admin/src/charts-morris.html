@@ -1,0 +1,232 @@
+@@include('./partials/html.html')
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "Morris Charts"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        @@include('./partials/menu.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="page-content">
+
+            <div class="page-container">
+
+                @@include("./partials/page-title.html", {"subtitle":"Morris","title":"Morris Charts"})
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Line Chart</h5>
+                                <p class="card-subtitle">
+                                    The public API is terribly simple. It's just one function: Morris.Line
+                                    (options), where options is an object containing some of the
+                                    configuration options
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <ul class="list-inline chart-detail-list">
+                                        <li class="list-inline-item">
+                                            <h6 class="text-success"><i class="mdi mdi-circle-outline me-1"></i>Series A</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-warning"><i class="mdi mdi-triangle-outline me-1"></i>Series B</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="morris-line-example" class="morris-chart" style="height: 300px;" dir="ltr"></div>
+
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Bar Chart</h5>
+                                <p class="card-subtitle">
+                                    Create bar charts using Morris.Bar(options), where options is an object
+                                    containing the configuration options.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <ul class="list-inline chart-detail-list">
+                                        <li class="list-inline-item">
+                                            <h6 class="text-info"><i class="mdi mdi-circle-outline me-1"></i>Series A</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-warning"><i class="mdi mdi-triangle-outline me-1"></i>Series B</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-danger"><i class="mdi mdi-square-outline me-1"></i>Series C</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="morris-bar-example" class="morris-chart" style="height: 320px;" dir="ltr"></div>
+
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Stacked Bar Chart</h5>
+                                <p class="card-subtitle">
+                                    Create stacked bar charts using Morris.Bar(options), where options is an object
+                                    containing the configuration options.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="morris-bar-stacked" style="height: 320px;" class="morris-charts"></div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Area Chart with Point</h5>
+                                <p class="card-subtitle">
+                                    Create an area chart using Morris.Area(options). Area charts take all the
+                                    same options as line charts.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <ul class="list-inline chart-detail-list">
+                                        <li class="list-inline-item">
+                                            <h6 class="text-purple"><i class="mdi mdi-circle-outline me-1"></i>Series A</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-pink"><i class="mdi mdi-triangle-outline me-1"></i>Series B</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="morris-area-with-dotted" class="morris-chart" style="height: 300px;" dir="ltr"></div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Area Chart</h5>
+                                <p class="card-subtitle">
+                                    Create an area chart using Morris.Area(options). Area charts take all the
+                                    same options as line charts.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <ul class="list-inline chart-detail-list">
+                                        <li class="list-inline-item">
+                                            <h6 class="text-info"><i class="mdi mdi-circle-outline me-1"></i>Series A</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-primary"><i class="mdi mdi-triangle-outline me-1"></i>Series B</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="morris-area-example" class="morris-chart" style="height: 300px;" dir="ltr"></div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Donut Chart</h5>
+                                <p class="card-subtitle">
+                                    This really couldn't be easier. Create a Donut chart using Morris.Donut(options).
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div id="morris-donut-example" class="morris-chart" style="height: 300px;" dir="ltr"></div>
+
+                                <div class="text-center">
+                                    <ul class="list-inline chart-detail-list">
+                                        <li class="list-inline-item">
+                                            <h6 class="text-warning"><i class="mdi mdi-circle-outline me-1"></i>Series A</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-purple"><i class="mdi mdi-triangle-outline me-1"></i>Series B</h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h6 class="text-pink"><i class="mdi mdi-square-outline me-1"></i>Series C</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+
+            </div> <!-- container -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    @@include('./partials/customizer.html')
+
+    @@include('./partials/footer-scripts.html')
+
+    <!-- Apex Chart js -->
+    <script src="assets/libs/morris.js/morris.min.js"></script>
+
+    <script src="assets/libs/raphael/raphael.min.js"></script>
+
+    <!-- Apex Chart Bar Demo js -->
+    <script src="assets/js/pages/morris.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+@@include('./partials/html.html')
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "Gallery"})
+
+    <!-- glightbox css -->
+    <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
+
+    @@include('./partials/head-css.html')
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        @@include('./partials/menu.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="page-content">
+
+            <div class="page-container">
+
+                @@include("./partials/page-title.html", {"subtitle":"Pages","title":"Gallery"})
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="portfolioFilter">
+                            <ul class="filter-options d-flex flex-wrap gap-2 list-unstyled">
+                                <li class="inline-block active" data-group="all">
+                                    <a href="javascript: void(0);" class="text-reset">All</a>
+                                </li>
+                                <li class="inline-block" data-group="natural">
+                                    <a href="javascript: void(0);" class="text-reset">Natural</a>
+                                </li>
+                                <li class="inline-block" data-group="creative">
+                                    <a href="javascript: void(0);" class="text-reset">Creative</a>
+                                </li>
+                                <li class="inline-block" data-group="personal">
+                                    <a href="javascript: void(0);" class="text-reset">Personal</a>
+                                </li>
+                                <li class="inline-block" data-group="photography">
+                                    <a href="javascript: void(0);" class="text-reset">Photography</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gallery-wrapper" class="row justify-content-center mt-2">
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["natural" , "personal"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-12.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-12.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["creative" , "personal" , "photography"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-2.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-2.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["natural","creative"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-3.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-3.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["personal","photography"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-4.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-4.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["creative", "photography"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-9.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-9.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["natural", "photography"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-6.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-6.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["personal" , "photography" , "creative"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-7.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-7.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["creative" , "photography" , "natural"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-8.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-8.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["natural" , "personal"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-5.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-5.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["photography" , "creative"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-10.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-10.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["creative" , "photography"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-11.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-11.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 picture-item" data-groups='["natural" , "creative" , "personal"]'>
+                        <div>
+                            <div class="card border work-container rounded shadow-none">
+                                <div class="card-body p-2 pb-0">
+                                    <div class="gallery-box rounded">
+                                        <a class="image-popup position-relative" href="assets/images/small/img-1.jpg">
+                                            <div class="overflow-hidden text-center">
+                                                <img src="assets/images/small/img-1.jpg" class="img-fluid rounded thumb-img">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between p-3 px-2">
+                                        <div>
+                                            <h5 class="font-16 mt-0"> Gallery Image</h5>
+                                            <p class=" mb-0">Web Design , Graphic Design</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="link-primary">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    @@include('./partials/customizer.html')
+ 
+    @@include('./partials/footer-scripts.html')
+    
+    <!-- Shuffle JS -->
+    <script src="assets/libs/shufflejs/shuffle.min.js"></script>
+
+    <!-- glightbox Plugin Js -->
+    <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Gallery Init-->
+    <script src="assets/js/pages/gallery.js"></script>
+
+</body>
+
+</html>

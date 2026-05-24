@@ -1,0 +1,34 @@
+// 
+// _page-title.scss
+//
+
+.page-title-box {
+    padding: 20px 24px;
+    margin: 0 -24px 24px -24px;
+    background-color: var(--#{$prefix}secondary-bg);
+    box-shadow: var(--#{$prefix}box-shadow);
+}
+
+html[data-layout="topnav"] {
+    .page-title-box {
+        background: transparent;
+        box-shadow: none;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+// // Page Head
+// @include media-breakpoint-up(md) {
+//     .page-title-head {
+//         height: 70px;
+//     }
+// }
+
+// @include media-breakpoint-down(md) {
+//     .page-title-head {
+//         padding: $spacer 0;
+//     }
+// }

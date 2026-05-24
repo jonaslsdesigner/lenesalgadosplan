@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="82" fill="#ff8a13"/>
+  <path d="M96 153C134 61 235 28 310 34" stroke="#ffffff" stroke-width="15" stroke-linecap="round"/>
+  <path d="M132 142C208 51 363 55 430 174" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M129 369C195 431 319 448 410 330" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+  <path d="M283 453C365 444 432 389 452 301" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <text x="256" y="206" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="5" transform="rotate(-4 256 206)">DELIVERY</text>
+  <text x="250" y="327" text-anchor="middle" fill="#ffffff" font-family="Brush Script MT, Segoe Script, cursive" font-size="190" font-weight="700" letter-spacing="-10" transform="rotate(-2 250 327)">Lene</text>
+  <text x="299" y="381" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="6" transform="rotate(-5 299 381)">SALGADOS</text>
+</svg>

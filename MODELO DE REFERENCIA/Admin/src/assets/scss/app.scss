@@ -1,0 +1,97 @@
+/*
+Template Name: Uplon - Responsive Admin & Dashboard Template
+Version: 1.0.0
+Author: Coderthemes
+Email: support@coderthemes.com
+File: App Css File
+*/
+
+// Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+
+@import "variables";
+@import "variables-dark";
+@import "variables-custom";
+@import "theme-mode";
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Structure
+@import "structure/topbar";
+@import "structure/sidenav";
+@import "structure/horizontal";
+@import "structure/layout";
+@import "structure/footer";
+@import "structure/customizer";
+@import "structure/page-title";
+
+
+// Components
+@import "components/utilities";
+@import "components/background";
+@import "components/accordions";
+@import "components/alert";
+@import "components/avatar";
+@import "components/breadcrumb";
+@import "components/buttons";
+@import "components/badge";
+@import "components/card";
+@import "components/dropdown";
+@import "components/forms";
+@import "components/modal";
+@import "components/nav";
+@import "components/pagination";
+@import "components/popover";
+@import "components/print";
+@import "components/progress";
+@import "components/reboot";
+@import "components/ribbons";
+@import "components/switch";
+@import "components/tables";
+@import "components/tooltip";
+@import "components/steps";
+@import "components/preloader";
+@import "components/widgets";
+
+
+// Pages
+@import "pages/chat";
+@import "pages/file-manager";
+@import "pages/authentication";
+@import "pages/error";
+@import "pages/faq";
+@import "pages/maintenance";
+@import "pages/gallery";
+@import "pages/email";
+@import "pages/timeline";
+@import "pages/components-demo";
+
+// Plugins
+@import "plugins/flot";
+@import "plugins/waves";
+@import "plugins/calendar";
+@import "plugins/hopscotch";
+@import "plugins/choice";
+@import "plugins/c3";
+@import "plugins/chartjs";
+@import "plugins/chartist";
+@import "plugins/jstree";
+@import "plugins/datatable";
+@import "plugins/responsive-table";
+@import "plugins/swiper";
+@import "plugins/bootstrap-tagsinput";
+@import "plugins/tablesaw";
+@import "plugins/daterange";
+@import "plugins/flatpickr";
+@import "plugins/dropify";
+@import "plugins/form-wizard";
+@import "plugins/maps";
+@import "plugins/quill-editor";
+@import "plugins/morris";
+@import "plugins/select2";
+@import "plugins/simplebar";
+@import "plugins/sparkline-chart";
+@import "plugins/toaster";
+@import "plugins/sweetalert2";
+@import "plugins/rangeslider";

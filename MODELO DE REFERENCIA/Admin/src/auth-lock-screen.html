@@ -1,0 +1,68 @@
+@@include('./partials/html.html')
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "Lock Screen"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+
+<body class="authentication-bg bg-primary">
+
+    <div class="account-pages pt-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="account-card-box bg-light rounded-2 p-2">
+                        <div class="card mb-0 border border-primary border-4">
+                            <div class="card-body p-4">
+
+                                <div class="text-center">
+                                    <div class="my-3">
+                                        <a href="index.html">
+                                            <span><img src="assets/images/logo-dark.png" alt="" height="28"></span>
+                                        </a>
+                                    </div>
+                                    <div class="user-thumb py-3">
+                                        <img src="assets/images/users/avatar-1.jpg" class="avatar-xl rounded-circle img-thumbnail" alt="thumbnail">
+                                        <p class="text-muted mt-2">
+                                            Enter your password to access the admin.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <form action="#" class="mt-2">
+
+                                    <div class="form-group mb-3">
+                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                                    </div>
+
+                                    <div class="form-group text-center mb-0">
+                                        <button class="btn btn-success btn-block waves-effect waves-light w-100" type="submit"> Log In </button>
+                                    </div>
+
+                                </form>
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <p class="text-white-50">Not you? <a href="auth-login.html" class="text-white ml-1"><b>Sign In</b></a></p>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    @@include('./partials/footer-scripts.html')
+
+</body>
+
+</html>

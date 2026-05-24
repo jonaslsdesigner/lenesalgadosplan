@@ -1,0 +1,211 @@
+@@include('./partials/html.html')
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "Flot Chart"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        @@include('./partials/menu.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="page-content">
+
+            <div class="page-container">
+
+                @@include("./partials/page-title.html", {"subtitle":"Flot","title":"Flot Charts"})
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Multiple Statistics</h5>
+                                <p class="card-subtitle">
+                                    Stacked chart not only shows the trends over time, you can also see the cumulative
+                                    sum of all data.Your awesome text goes here.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="website-stats" style="height: 320px;" class="flot-chart"></div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Realtime Statistics</h5>
+                                <p class="card-subtitle">
+                                    You can update a chart periodically to get a real-time effect by using a timer
+                                    to insert the new data in the plot and redraw it.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Line Chart</h5>
+                                <p class="card-subtitle">
+                                    The line chart is most often used chart, aslo the easiest to make, it shows trends over time,
+                                    visualizes data and information, so users can know how exactly these numbers are relate to
+                                    each other in one glance.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="website-stats1" style="height: 320px;" class="flot-chart"></div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Donut Pie</h5>
+                                <p class="card-subtitle">
+                                    Pie chart is used to see the proprotion of each data groups, making Flot pie chart is pretty simple,
+                                    in order to make pie chart you have to incldue jquery.flot.pie.js plugin.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="donut-chart-container" class="flot-chart" style="height: 260px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Pie Chart</h5>
+                                <p class="card-subtitle">
+                                    Pie chart is used to see the proprotion of each data groups, making Flot pie chart is pretty simple,
+                                    in order to make pie chart you have to incldue jquery.flot.pie.js plugin.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="pie-chart-container" class="flot-chart" style="height: 260px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Stacked Bar chart</h5>
+                                <p class="card-subtitle">
+                                    With the stack plugin, you can have Flot stack the series. This is useful if you wish to display
+                                    both a total and the constituents it is made of.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="ordered-bars-chart" style="height: 320px;"></div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Combine Chart</h5> 
+                            </div>
+                            <div class="card-body">
+                                <div dir="ltr">
+                                    <div id="combine-chart-container" class="flot-chart" style="height: 320px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end card body-->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col-->
+                    <!-- end col-->
+                </div>
+                <!-- end row-->
+
+            </div> <!-- container -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    @@include('./partials/customizer.html')
+
+    @@include('./partials/footer-scripts.html')
+
+    <script src="assets/libs/flot-charts/jquery.flot.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.time.js"></script>
+    <script src="assets/libs/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.resize.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.pie.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.selection.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.stack.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.crosshair.js"></script>
+
+    <!-- <script src="assets/libs/flot-charts/j"></script> -->
+
+    <!-- Flot Chart demo js -->
+    <script src="assets/js/pages/flot.js"></script>
+
+</body>
+
+</html>

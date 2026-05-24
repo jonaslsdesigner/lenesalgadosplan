@@ -1,0 +1,316 @@
+@@include('./partials/html.html')
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "Tile Box"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        @@include('./partials/menu.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="page-content">
+
+            <div class="page-container">
+
+                @@include("./partials/page-title.html", {"subtitle":"Widgets","title":"Tile Box"})
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-one">
+                            <div class="card-body">
+                                <i class="icon-layers float-end m-0 h2 text-muted"></i>
+                                <h6 class="text-muted text-uppercase mt-0">Orders</h6>
+                                <h3 class="mb-3" data-plugin="counterup">1,587</h3>
+                                <span class="badge bg-success mr-1"> +11% </span> <span class="text-muted">From previous period</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-one">
+                            <div class="card-body">
+                                <i class="icon-paypal float-end m-0 h2 text-muted"></i>
+                                <h6 class="text-muted text-uppercase mt-0">Revenue</h6>
+                                <h3 class="mb-3">$<span data-plugin="counterup">46,782</span></h3>
+                                <span class="badge bg-danger mr-1"> -29% </span> <span class="text-muted">From previous period</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-one">
+                            <div class="card-body">
+                                <i class="icon-chart float-end m-0 h2 text-muted"></i>
+                                <h6 class="text-muted text-uppercase mt-0">Average Price</h6>
+                                <h3 class="mb-3">$<span data-plugin="counterup">15.9</span></h3>
+                                <span class="badge bg-warning mr-1"> 0% </span> <span class="text-muted">From previous period</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-one">
+                            <div class="card-body">
+                                <i class="icon-rocket float-end m-0 h2 text-muted"></i>
+                                <h6 class="text-muted text-uppercase mt-0">Product Sold</h6>
+                                <h3 class="mb-3" data-plugin="counterup">1,890</h3>
+                                <span class="badge bg-success mr-1"> +89% </span> <span class="text-muted">Last year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <i class="icon-rocket float-end text-muted"></i>
+                                <h6 class="text-success text-uppercase">Product Sold</h6>
+                                <h3><span data-plugin="counterup">1,245</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <i class="icon-chart float-end text-muted"></i>
+                                <h6 class="text-primary text-uppercase">Average Price</h6>
+                                <h3>$<span data-plugin="counterup">15.9</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <i class="icon-layers float-end text-muted"></i>
+                                <h6 class="text-pink text-uppercase">Orders</h6>
+                                <h3 data-plugin="counterup">1,587</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <i class="icon-paypal float-end text-muted"></i>
+                                <h6 class="text-info text-uppercase">Revenue</h6>
+                                <h3>$<span data-plugin="counterup">46,782</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-sm btn-primary waves-effect waves-light float-end">View</a>
+                                <h6 class="text-muted text-uppercase mt-0">Product Sold</h6>
+                                <h3 class="mb-4"><span data-plugin="counterup">1,890</span></h3>
+                                <div class="progress progress-md">
+                                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-sm btn-primary waves-effect waves-light float-end">View</a>
+                                <h6 class="text-muted text-uppercase mt-0">Average Price</h6>
+                                <h3 class="mb-4">$<span data-plugin="counterup">22.56</span></h3>
+                                <div class="progress progress-md">
+                                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-sm btn-primary waves-effect waves-light float-end">View</a>
+                                <h6 class="text-muted text-uppercase mt-0">Orders</h6>
+                                <h3 class="mb-4" data-plugin="counterup">9,754</h3>
+                                <div class="progress progress-md">
+                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-two">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-sm btn-primary waves-effect waves-light float-end">View</a>
+                                <h6 class="text-muted text-uppercase mt-0">Revenue</h6>
+                                <h3 class="mb-4">$<span data-plugin="counterup">22,459</span></h3>
+                                <div class="progress progress-md">
+                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card widget-user position-relative">
+                            <div class="card-body">
+                                <img src="assets/images/users/avatar-3.jpg" class="avatar-md rounded-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h5 class="mt-3 mb-1 font-16">Chadengle</h5>
+                                    <p class="text-muted mb-0 font-13">coderthemes@gmail.com</p>
+                                    <div class="user-position">
+                                        <span class="text-warning font-weight-bold">Admin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card widget-user position-relative">
+                            <div class="card-body">
+                                <img src="assets/images/users/avatar-2.jpg" class="avatar-md rounded-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h5 class="mt-3 mb-1 font-16"> Michael Zenaty</h5>
+                                    <p class="text-muted mb-0 font-13">coderthemes@gmail.com</p>
+                                    <div class="user-position">
+                                        <span class="text-info font-weight-bold">User</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card widget-user position-relative">
+                            <div class="card-body">
+                                <img src="assets/images/users/avatar-1.jpg" class="avatar-md rounded-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h5 class="mt-3 mb-1 font-16">Stillnotdavid</h5>
+                                    <p class="text-muted mb-0 font-13">coderthemes@gmail.com</p>
+                                    <div class="user-position">
+                                        <span class="text-success font-weight-bold">Admin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card widget-user position-relative">
+                            <div class="card-body">
+                                <img src="assets/images/users/avatar-10.jpg" class="avatar-md rounded-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h5 class="mt-3 mb-1 font-16">Tomaslau</h5>
+                                    <p class="text-muted mb-0 font-13">coderthemes@gmail.com</p>
+                                    <div class="user-position">
+                                        <span class="text-pink font-weight-bold">User</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-three">
+                            <div class="card-body">
+                                <div class="avatar-xl rounded-circle bg-light border border float-start">
+                                    <i class="icon-wallet font-22 avatar-title text-muted"></i>
+                                </div>
+                                <div class="text-end">
+                                    <h6 class="text-success text-uppercase">Product Sold</h6>
+                                    <h3><span data-plugin="counterup">2,562</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-three">
+                            <div class="card-body">
+                                <div class="avatar-xl rounded-circle bg-light border border float-start">
+                                    <i class="icon-basket font-22 avatar-title text-muted"></i>
+                                </div>
+                                <div class="text-end">
+                                    <h6 class="text-pink text-uppercase">Product Sold</h6>
+                                    <h3><span data-plugin="counterup">8,542</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-three">
+                            <div class="card-body">
+                                <div class="avatar-xl rounded-circle bg-light border border float-start">
+                                    <i class="icon-equalizer font-22 avatar-title text-muted"></i>
+                                </div>
+                                <div class="text-end">
+                                    <h6 class="text-purple text-uppercase">Product Sold</h6>
+                                    <h3><span data-plugin="counterup">6,254</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card tilebox-three">
+                            <div class="card-body">
+                                <div class="avatar-xl rounded-circle bg-light border border float-start">
+                                    <i class="icon-cup font-22 avatar-title text-muted"></i>
+                                </div>
+                                <div class="text-end">
+                                    <h6 class="text-warning text-uppercase">Product Sold</h6>
+                                    <h3><span data-plugin="counterup">7,524</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+            </div>
+
+
+        </div>
+
+        @@include('./partials/footer.html')
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    @@include('./partials/customizer.html')
+
+    @@include('./partials/footer-scripts.html')
+
+</body>
+
+</html>

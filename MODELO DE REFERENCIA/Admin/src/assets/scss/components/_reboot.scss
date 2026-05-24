@@ -1,0 +1,91 @@
+//
+// reboot.scss
+//
+
+html {
+    position: relative;
+    min-height: 100%;
+    // direction: ltr;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::selection {
+    color: $primary;
+    background: rgba($primary, 0.15);
+}
+
+button,
+a {
+    outline: none !important;
+}
+
+// Forms
+
+label {
+    font-weight: $font-weight-medium;
+}
+
+b,
+strong {
+    font-weight: $font-weight-semibold;
+}
+
+// border style
+.border-dashed {
+    --#{$prefix}border-style: dashed;
+}
+
+
+
+// Custom Link
+.link-reset {
+    color: inherit;
+    transition: $transition-base;
+
+    &:hover {
+        color: var(--#{$prefix}primary);
+    }
+}
+
+
+.page-container {
+    @extend .container-fluid;
+}
+
+// .page-container {
+//     @extend .container;  
+// }
+
+// .page-container {
+//     max-width: 90%;
+// }
+
+.shadow-text {
+    text-shadow: rgba(255, 255, 255, .3) 5px 1px, rgba(255, 255, 255, .2) 12px 3px, rgba(255, 255, 255, .1) 6px 4px !important;
+}
+
+
+.card-pricing{
+    box-shadow: $box-shadow-sm;
+    .card-pricing-features{
+        li{
+            padding: 15px;
+        }
+    }
+    .card-price{
+        font-size: 48px;
+        font-weight: 300;
+    }
+    &.active{
+        margin: 0 -24px;
+        box-shadow: $box-shadow;
+    }
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+

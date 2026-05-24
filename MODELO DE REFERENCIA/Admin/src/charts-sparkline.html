@@ -1,0 +1,159 @@
+@@include('./partials/html.html')
+
+    <head>
+        @@include("./partials/title-meta.html", {"title": "Sparkline Charts"})
+
+        @@include('./partials/head-css.html')
+    </head>
+
+    <body>
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            @@include('./partials/menu.html')
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="page-content">
+
+                    <div class="page-container">
+
+                        @@include("./partials/page-title.html", {"subtitle":"Sparkline","title":"Sparkline Charts"})
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Line Charts</h5>
+                                        <p class="card-subtitle">
+                                            Display as line Chart.Your awesome text goes here.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="sparkline1"></div>        
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+        
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Bar Chart</h5>
+                                        <p class="card-subtitle">
+                                            Display as bar Chart.Your awesome text goes here.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="sparkline2" class="text-center"></div> 
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+                        </div>
+                        <!-- end row-->
+        
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Pie Chart</h5>
+                                        <p class="card-subtitle">
+                                            Display as pie Chart.Your awesome text goes here.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="sparkline3" class="text-center"></div>      
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+        
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Custom Line Chart</h5>
+                                        <p class="card-subtitle">
+                                            Display as custom line Chart.Your awesome text goes here.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="sparkline4" class="text-center"></div>
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+                        </div>
+                        <!-- end row-->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Mouse Speed Chart Example</h5>
+                                        <p class="card-subtitle">
+                                            Display as Mouse Speed Chart.Your awesome text goes here.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="sparkline5" class="text-center"></div>
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+        
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Composite bar Chart</h5>
+                                        <p class="card-subtitle">
+                                            Display as Composite bar Chart.Your awesome text goes here.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="sparkline6" class="text-center"></div>
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+                        </div>
+                        <!-- end row-->
+
+                    </div> <!-- container -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        @@include('./partials/customizer.html')
+
+        @@include('./partials/footer-scripts.html')
+
+        <!-- Sparkline charts -->
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+       
+        <script src="assets/js/pages/sparkline.js"></script>
+
+
+    </body>
+</html>
