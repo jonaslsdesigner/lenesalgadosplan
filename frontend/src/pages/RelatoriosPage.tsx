@@ -58,29 +58,23 @@ export function RelatoriosPage({ weeklyPerformance, salesTotal, expensesTotal, o
 
   return (
     <div className="page-content">
-      <div className="page-header">
-        <div>
-          <span className="eyebrow">Analise de desempenho</span>
-          <h2 className="page-title">Relatorios</h2>
+      <div className="page-actions">
+        <div className="period-tabs">
+          {(["semana", "mes", "ano"] as Period[]).map((p) => (
+            <button
+              key={p}
+              type="button"
+              className={`period-btn ${period === p ? "active" : ""}`}
+              onClick={() => setPeriod(p)}
+            >
+              {periodLabels[p]}
+            </button>
+          ))}
         </div>
-        <div className="page-actions">
-          <div className="period-tabs">
-            {(["semana", "mes", "ano"] as Period[]).map((p) => (
-              <button
-                key={p}
-                type="button"
-                className={`period-btn ${period === p ? "active" : ""}`}
-                onClick={() => setPeriod(p)}
-              >
-                {periodLabels[p]}
-              </button>
-            ))}
-          </div>
-          <button type="button" className="secondary">
-            <Download size={16} />
-            Exportar
-          </button>
-        </div>
+        <button type="button" className="secondary">
+          <Download size={16} />
+          Exportar
+        </button>
       </div>
 
       <section className="metric-grid" aria-label="Metricas do periodo">

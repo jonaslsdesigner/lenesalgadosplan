@@ -8,13 +8,13 @@
 .sidebar {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: calc(100vh / 0.9);
   background: #ffffff;
   color: #302f32;
-  padding: 38px 24px 28px;
+  padding: 38px 24px 24px;
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 0;
   border-right: 1px solid #f0edf4;
 }
 
@@ -36,6 +36,7 @@
 
 .brand {
   gap: 12px;
+  margin-bottom: 42px;
 }
 
 .brand-mark {

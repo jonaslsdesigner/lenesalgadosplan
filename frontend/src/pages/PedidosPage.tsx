@@ -50,13 +50,6 @@ export function PedidosPage({ orders }: Props) {
 
   return (
     <div className="page-content">
-      <div className="page-header">
-        <div>
-          <span className="eyebrow">Hoje &bull; {allOrders.length} pedidos no total</span>
-          <h2 className="page-title">Pedidos</h2>
-        </div>
-      </div>
-
       <div className="filter-tabs">
         {tabs.map((tab) => (
           <button

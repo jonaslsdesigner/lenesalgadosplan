@@ -52,16 +52,10 @@ export function MensagensPage() {
 
   return (
     <div className="page-content">
-      <div className="page-header">
-        <div>
-          <span className="eyebrow">{contacts.length} clientes cadastrados</span>
-          <h2 className="page-title">Clientes &amp; Mensagens</h2>
-        </div>
-        <div className="page-actions contact-summary">
-          <span className="contact-summary-item fiel">{fieis} fieis</span>
-          <span className="contact-summary-item ativo">{ativos} ativos</span>
-          <span className="contact-summary-item novo">{novos} novos</span>
-        </div>
+      <div className="contact-summary">
+        <span className="contact-summary-item fiel">{fieis} fieis</span>
+        <span className="contact-summary-item ativo">{ativos} ativos</span>
+        <span className="contact-summary-item novo">{novos} novos</span>
       </div>
 
       <label className="search-box full-search">

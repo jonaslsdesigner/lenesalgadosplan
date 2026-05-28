@@ -15,13 +15,6 @@ export function ConfiguracoesPage() {
 
   return (
     <div className="page-content">
-      <div className="page-header">
-        <div>
-          <span className="eyebrow">Configuracoes do sistema</span>
-          <h2 className="page-title">Ajustes</h2>
-        </div>
-      </div>
-
       <div className="settings-layout">
         <nav className="settings-tabs" aria-label="Secoes de configuracao">
           {tabs.map(({ id, label, Icon }) => (

@@ -37,23 +37,6 @@ export function FinanceiroPage({ salesTotal, expensesTotal, netProfit, ordersCou
 
   return (
     <div className="page-content">
-      <div className="page-header">
-        <div>
-          <span className="eyebrow">Maio 2025</span>
-          <h2 className="page-title">Financeiro</h2>
-        </div>
-        <div className="page-actions">
-          <button type="button" className="secondary">
-            <ArrowDownLeft size={16} />
-            Nova saida
-          </button>
-          <button type="button">
-            <ArrowUpRight size={16} />
-            Nova entrada
-          </button>
-        </div>
-      </div>
-
       <section className="metric-grid" aria-label="Resumo financeiro">
         <article>
           <div className="metric-icon"><WalletCards size={22} /></div>

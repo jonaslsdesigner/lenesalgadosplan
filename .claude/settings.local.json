@@ -4,7 +4,11 @@
       "PowerShell(Get-ChildItem -Path \"c:\\\\xampp\\\\htdocs\\\\LENE SALGADOS PLAN\\\\frontend\" -Recurse -File | Where-Object { $_.Extension -in @\\('.html', '.php', '.htm', '.js', '.css', '.jsx', '.tsx', '.ts'\\) } | Select-Object FullName)",
       "PowerShell(Get-ChildItem -Path \"c:\\\\xampp\\\\htdocs\\\\LENE SALGADOS PLAN\\\\kds\" -Recurse -File | Where-Object { $_.Extension -in @\\('.html', '.php', '.htm', '.js', '.css', '.jsx', '.tsx', '.ts'\\) } | Select-Object FullName)",
       "PowerShell(Head -50)",
-      "PowerShell(Get-ChildItem \"c:\\\\xampp\\\\htdocs\\\\LENE SALGADOS PLAN\\\\frontend\" -Recurse | Where-Object { $_.Extension -match '\\\\.\\(tsx|ts|jsx|js|css\\)$' } | Select-Object FullName | Select-Object -First 30)"
+      "PowerShell(Get-ChildItem \"c:\\\\xampp\\\\htdocs\\\\LENE SALGADOS PLAN\\\\frontend\" -Recurse | Where-Object { $_.Extension -match '\\\\.\\(tsx|ts|jsx|js|css\\)$' } | Select-Object FullName | Select-Object -First 30)",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(git checkout *)"
     ]
   }
 }

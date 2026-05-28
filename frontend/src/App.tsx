@@ -101,6 +101,16 @@ const pageH1: Record<Page, string> = {
   configuracoes: "Ajustes"
 };
 
+const pageEyebrow: Record<Page, string> = {
+  dashboard: "",
+  financeiro: "Maio 2025",
+  pedidos: "Pedidos do dia",
+  estoque: "Controle de insumos",
+  clientes: "Clientes cadastrados",
+  relatorios: "Analise de desempenho",
+  configuracoes: "Configuracoes do sistema"
+};
+
 function App() {
   const [page, setPage] = useState<Page>("dashboard");
   const [dashboard, setDashboard] = useState<DashboardData | null>(null);
@@ -192,7 +202,7 @@ function App() {
       <section className="content">
         <header className="topbar">
           <div>
-            <span className="eyebrow">{page === "dashboard" ? monthLabel : "Lene Salgados"}</span>
+            <span className="eyebrow">{page === "dashboard" ? monthLabel : pageEyebrow[page]}</span>
             <h1>{pageH1[page]}</h1>
           </div>
           <label className="search-box">
@@ -233,14 +243,6 @@ function App() {
         {page === "dashboard" && (
           <div className="workspace">
             <section className="main-column">
-              {!isSupabaseReady && (
-                <div className="setup-alert">
-                  <AlertTriangle size={18} />
-                  Modo local ativo: usando dados ilustrativos do backend em VS Code.
-                  Supabase fica para a migracao final.
-                </div>
-              )}
-
               {apiError && (
                 <div className="setup-alert danger">
                   <AlertTriangle size={18} />

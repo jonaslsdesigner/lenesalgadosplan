@@ -53,13 +53,6 @@ export function EstoquePage({ lowStock: _ }: Props) {
 
   return (
     <div className="page-content">
-      <div className="page-header">
-        <div>
-          <span className="eyebrow">Controle de insumos</span>
-          <h2 className="page-title">Estoque</h2>
-        </div>
-      </div>
-
       <section className="metric-grid" aria-label="Resumo do estoque">
         <article>
           <div className="metric-icon"><Package size={22} /></div>
